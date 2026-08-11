@@ -126,10 +126,12 @@ body {
 ========================= */
 
 .homepage {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -392,4 +394,287 @@ body {
 
 .link-section a:hover {
     text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* ---------- Tablets & Small Laptops ---------- */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        gap: 14px;
+        padding: 7px 10px 15px 0;
+    }
+
+    .homepage {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+
+    .logo svg {
+        width: 230px;
+        height: auto;
+    }
+
+    .search-box {
+        width: min(584px, 90vw);
+        height: 46px;
+        padding: 0 12px;
+    }
+
+    .search-area {
+        min-width: 0;
+        margin-left: 10px;
+    }
+
+    .ai-mode {
+        margin-left: 10px;
+        padding: 7px;
+    }
+
+    .ai-mode span {
+        display: none;
+    }
+
+    .two-btns {
+        margin-top: 25px;
+    }
+
+    .lang-offer {
+        margin-top: 35px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        height: auto;
+        min-height: 100px;
+        padding: 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .link-section {
+        gap: 20px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ---------- Mobile Phones ---------- */
+
+@media (max-width: 480px) {
+
+    /* Header */
+
+    .header-content {
+        gap: 8px;
+        padding: 5px 6px 10px 0;
+    }
+
+    .header-content a {
+        font-size: 12px;
+    }
+
+    .apps-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .profile-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    /* Main */
+
+    .homepage {
+        padding: 0 12px;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .logo svg {
+        width: 180px;
+        height: auto;
+    }
+
+
+    /* Search */
+
+    .search-box {
+        width: 100%;
+        max-width: 400px;
+        height: 44px;
+        padding: 0 10px;
+        margin-top: 18px;
+    }
+
+    .search-box > svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-area {
+        width: 100%;
+        min-width: 0;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+    .voice-wrapper svg,
+    .lens-wrapper svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .lens {
+        margin-left: 8px;
+    }
+
+    .ai-mode {
+        margin-left: 8px;
+        padding: 6px;
+    }
+
+    .ai-mode svg {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    /* Buttons */
+
+    .two-btns {
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+    .btn {
+        padding: 9px 11px;
+        font-size: 13px;
+    }
+
+
+    /* Languages */
+
+    .lang-offer {
+        gap: 5px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        padding: 15px 15px;
+        min-height: 120px;
+    }
+
+    .footer span {
+        font-size: 13px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .link-section {
+        width: 100%;
+        margin-top: 25px;
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .link-section a {
+        font-size: 13px;
+    }
+}
+
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width: 360px) {
+
+    .header-content a {
+        font-size: 11px;
+    }
+
+    .logo svg {
+        width: 160px;
+    }
+
+    .search-box {
+        height: 42px;
+        padding: 0 8px;
+    }
+
+    .search-box > svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .voice-wrapper svg,
+    .lens-wrapper svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .ai-mode {
+        padding: 5px;
+        margin-left: 5px;
+    }
+
+    .ai-mode svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .two-btns {
+        gap: 5px;
+    }
+
+    .btn {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+    .lang-offer {
+        font-size: 11px;
+    }
+
+    .link-section {
+        gap: 12px;
+    }
+
+    .link-section a {
+        font-size: 12px;
+    }
 }
